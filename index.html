@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade - Duolingo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-feather-alt"></i>
+            <h1>Duolingo</h1>
+        </div>
+        <nav class="navigation">
+            <a href="#">Aprender</a>
+            <a href="#" class="active">Comunidade</a>
+            <a href="#">Loja</a>
+            <a href="#">Perfil</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h2>Comunidade</h2>
+
+        <section id="study-groups" class="section">
+            <h3>Grupos de Estudo</h3>
+            <div class="cards-container" id="group-cards-container">
+                </div>
+            <button class="add-button" id="add-group-button">Criar Novo Grupo</button>
+        </section>
+
+        <section id="challenges" class="section">
+            <h3>Desafios Semanais</h3>
+            <div class="cards-container" id="challenge-cards-container">
+                </div>
+            <button class="add-button" id="add-challenge-button">Criar Novo Desafio</button>
+        </section>
+    </main>
+
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
